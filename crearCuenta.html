@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="icon" type="image/x-icon" href="img/LogoECO.png">
+    <link rel="stylesheet" href="styles/stylesCrearCuenta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+        <div class="logo">
+            <img src="img/LogoECO.png" alt="LogoECO">
+            <h1>ECOESSENCE</h1>
+        </div>
+        <div class="login">
+            <form id="form-registro">
+                <h1>Registro</h1>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo"> 
+                <label for="contra">Contraseña: </label>
+                <input type="password" id="contra">
+                <label for="tel">Telefonó: </label>
+                <input type="tel" id="tel"> 
+                <div id="responseMessage"></div>
+                <button type="submit">Crear Cuenta</button>
+                <a href="login.html">Iniciar Sesión</a>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="module" src="js/archivosLogica/CrearCuenta.js"></script>
+</body>
+</html>

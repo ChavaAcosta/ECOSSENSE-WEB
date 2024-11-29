@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecossensence</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/LogoECO.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/stylesHeader.css">
+    <link rel="stylesheet" href="./styles/stylesFooter.css">
+    <link rel="stylesheet" href="./styles/stylesItem.css">
+    <link rel="stylesheet" href="./styles/stylesTransicion.css">
+</head>
+<body class="loading">
+    <!-- Animacion de logo -->
+    <div class="transition-overlay">
+        <img src="img/LogoECO.png" alt="Transition Image" class="transition-image">
+    </div>
+   <!-- Encabezado principal -->
+   <header>
+        <div class="logo">
+            <img src="img/LogoECO.png" alt="Logo principal">
+            <h2 class="Nombre de la empresa">
+            ECOSSENCE
+            </h2>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav id="nav">
+            <a href="Index.html" class="nav-link"><i class="fas fa-home"></i></a>
+            <a href="login.html" class="nav-link" id="user-link"><i class="fas fa-user"></i></a>
+            <!--<a href="" class="nav-link"><i class="fas fa-heart"></i></a>-->
+            <a href="catalogo.html" class="nav-link"><i class="fas fa-shopping-bag"></i></a>
+            <a href="carrito.html" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+    </header>
+    <div class="eslogan">
+        <h2>
+            Naturaleza en tus manos
+        </h2>
+    </div>
+
+
+
+    <!------------ Carrusel ------------>
+
+    <section id="carrusel">
+        <div class="carrusel-container">
+            <div class="carrusel-slide">
+                <img src="img/C1.webp" alt="Imagen 1">
+            </div>
+            <div class="carrusel-slide">
+                <img src="img/C2.webp" alt="Imagen 2">
+            </div>
+            <div class="carrusel-slide">
+                <img src="img/C3.webp" alt="Imagen 3">
+            </div>
+        </div>
+        <!--
+        <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+        -->
+        <div class="carrusel-indicators">
+            <div onclick="cambiarSlide(0)" class="active"></div>
+            <div onclick="cambiarSlide(1)"></div>
+            <div onclick="cambiarSlide(2)"></div>
+        </div>        
+    </section>
+
+    <!-- Sección "Que esperas para conectar con el planeta" -->
+    <section>
+        <div class="eslogan-secundario">
+            <h2>
+                Que esperas para conectar con el planeta
+            </h2>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="items">
+        <div class="categoria">
+            <div class="item-h2">
+                <h2>Productos en tendencia</h2>
+            </div>
+            <div class="item-scroll">
+                <div class="item">
+                    <img src="img/crema.webp" alt="Producto 1">
+                    <p>Producto 1</p>
+                    <span>$29.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/aceite.webp" alt="Producto 2">
+                    <p>Producto 2</p>
+                    <span>$19.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/balsamo.webp" alt="Producto 3">
+                    <p>Producto 3</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/pasta.webp" alt="Producto 4">
+                    <p>Producto 4</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jabon.webp" alt="Producto 5">
+                    <p>Producto 5</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jabon.webp" alt="Producto 5">
+                    <p>Producto 5</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jabon.webp" alt="Producto 5">
+                    <p>Producto 5</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jabon.webp" alt="Producto 5">
+                    <p>Producto 5</p>
+                    <span>$24.99</span>
+                </div>
+                <div class="item">
+                    <img src="img/Jabon.webp" alt="Producto 5">
+                    <p>Producto 5</p>
+                    <span>$24.99</span>
+                </div>
+                
+                <!-- Más productos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de reseñas de clientes -->
+    <section class="resenas">
+        <div class="reseña-h2">
+            <h2>Reseñas de clientes</h2>
+        </div>
+    
+    <div class="reseña">
+            <div class="resena-item">
+                <p><strong>Esto huele genial!</strong></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Una chica me paró en la calle y me dijo "estás usando el mismo perfume que yo, Baccarat Rouge 540!"</p>
+            </div>
+            <div class="resena-item">
+                <p><strong>Perfecto para mi piel sensible</strong></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>He probado muchos productos, pero este realmente calma mi piel sin irritarla. ¡Lo recomiendo totalmente!</p>
+            </div>
+            <div class="resena-item">
+                <p><strong>Un aroma relajante</strong></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>El aroma es muy suave y natural. Es perfecto para usar en la noche y ayuda a relajarme antes de dormir.</p>
+            </div>        
+            <div class="resena-item">
+                <p><strong>Increíble jabón </strong></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Este jabón escencial aparte de que huele muy rico he notado que me deja la piel increíble</p>
+            </div>
+            <div class="resena-item">
+                <p><strong>Mi marido me lo robó!</strong></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Es un perfume maravilloso! Dejé que mi esposo lo oliera y se lo llevó de inmediato! ¡Armaré uno así para un gran acontecimiento!</p>
+            </div>
+    </div>
+    </section>
+
+    <!-- Sección de acerca de nosotros -->
+    <section class="acerca-de">
+        <div class="acerca-de-h2">
+            <h2>Acerca de nosotros</h2>
+        </div>
+        
+        <div class="acerca-de-content">
+            <img src="img/aboutus.webp" alt="Logo Orgánico">
+            <div class="texto">
+                <p>
+                    En una ciudad donde los productos comerciales llenaban los estantes, surgió una pequeña tienda con una propuesta diferente: cambiar la manera en que las personas cuidaban de sí mismas y del planeta.
+                    ECOESSENCE nació con una misión clara: ofrecer productos de aseo personal hechos con ingredientes naturales y libres de químicos nocivos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <footer>
+        <div class="footer-container">
+            <!-- Primera columna: Atención al Cliente -->
+            <div class="footer-column">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><a href="#">Ayuda y contactos</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Límites de importación</a></li>
+                    <li><a href="#">Compromiso de ECOESSENCE con el cliente</a></li>
+                </ul>
+            </div>
+    
+            <!-- Segunda columna: Compras -->
+            <div class="footer-column">
+                <h4>Compras</h4>
+                <ul>
+                    <li><a href="#">Pedidos y envíos</a></li>
+                    <li><a href="#">Pagos y precios</a></li>
+                    <li><a href="#">Pagos con criptomoneda</a></li>
+                    <li><a href="#">Términos y Condiciones de la Promoción</a></li>
+                    <li><a href="#">Devoluciones y reembolsos</a></li>
+                </ul>
+            </div>
+    
+            <!-- Tercera columna: Redes Sociales -->
+            <div class="footer-column social">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h4>Síguenos</h4>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="social-icons">
+                    <a href="#"><img src="img/IcInsta.webp" alt="Instagram"></a>
+                    <a href="#"><img src="img/IcFacebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/IcPinterest.png" alt="Pinterest"></a>
+                    <a href="#"><img src="img/IcX.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/IcSnap.png" alt="Snapchat"></a>
+                    <a href="#"><img src="img/IcYoutube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/JS.js"></script>
+    <script src="js/JSTransicion.JS"></script>
+    <script type="module" src="js/archivosLogica/Index.js"></script>
+</body>
+</html>

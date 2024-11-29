@@ -1,0 +1,203 @@
+.informacion-personal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Contenedor para la lista */
+#infoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+
+  .button-container{
+    position: absolute;
+    top: 125px; /* Alinear en la parte superior */
+    right: -35px; /* Alinear en la parte derecha */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 20px; /* Espacio superior */
+  }
+
+  /* Estilo de cada elemento de la lista */
+  .info-box {
+    position: relative;
+    width: 95%;
+    height: 300px;
+    margin: 25px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: flex; /* Flex para contenido alineado */
+    padding: 10px;
+    flex-direction: column; /* Alinear contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
+    text-align: center; /* Centrar texto */
+    z-index: 1;
+  }
+
+  .info-box strong {
+    font-size: 18px; /* Tamaño del texto del nombre */
+    color: #333; /* Color del texto */
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espaciado debajo del nombre */
+  }
+
+  .info-box p {
+    font-size: 16px; /* Tamaño del texto */
+    color: #666; /* Color más suave para información */
+    margin: 0; /* Sin márgenes */
+  }
+  
+  .invisible-btn {
+    position: absolute; /* Posiciona el botón encima del info-box */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cubre todo el ancho del info-box */
+    height: 100%; /* Cubre todo el alto del info-box */
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor de mano al pasar encima */
+    opacity: 0; /* Invisible */
+  }
+  
+
+  /* Estilos del botón añadir */
+  .add-button {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde el borde superior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    padding: 20px 50px;
+    background-color: #2aa0fa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #1a78c2;
+}
+
+  /* Estilos de la ventana emergente */
+  .cuestionario-datos {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000; /* Asegura que el modal se sobreponga */
+  }
+
+  .cuestionario-datos-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Asegura que el modal se sobreponga */
+  }
+
+  /* Estilo del botón de eliminar */
+  .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+  }
+
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+
+  .separador {
+    position: relative;
+    font-size: 24px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centrar el texto (opcional) */
+  }
+  
+  .separador::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; /* Espaciado entre el texto y la línea */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%; /* Ajustar al ancho del texto (puedes usar valores personalizados) */
+    height: 2px; /* Grosor de la línea */
+    background-color: #2aa0fa; /* Color de la línea */
+  }
+  
+  /* Estilo general de la sección */
+  .button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    gap: 20px; /* Espaciado entre botones */
+    margin: 20px auto; /* Centrar horizontalmente el contenedor con margen superior e inferior */
+    width: 96%; /* Asegurarse de que ocupe el 95% de la pantalla */
+    max-width: 1200px; /* Puedes ajustar un ancho máximo si lo deseas */
+  }
+  
+
+/* Línea separadora */
+.separator {
+  width: 95%; /* Largo de la línea: 95% de la página */
+  height: 1px; /* Espesor de la línea */
+  background-color: #333; /* Color de la línea */
+  margin-bottom: 20px; /* Espaciado debajo de la línea */
+}
+
+/* Estilo de los botones */
+.custom-button {
+  width: 200px; /* Ancho fijo de los botones */
+  height: 50px;
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  background-color: #2aa0fa; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.custom-button:hover {
+  background-color: #1a78c2; /* Cambio de color al pasar el ratón */
+}

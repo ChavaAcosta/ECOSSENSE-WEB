@@ -1,0 +1,103 @@
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: #FAF2E1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    animation: bounce 2s infinite ease-in-out; /* Asigna la animación */
+}
+
+.logo img{
+    height: 70px;
+    margin-right: 25px;
+    margin-left: 25px;
+    animation: bounce 4s infinite ease-in-out; /* Asigna la animación */
+}
+
+
+/* Estilo de la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a{
+    transition: flex-grow 0.3s ease; /* Suaviza el cambio de tamaño */
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 45px;
+    padding-right: 10px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+nav a:hover{
+    animation: bounce 1s infinite ease-in-out;
+    font-size: 35px;
+    color:rgb(76, 57, 31)
+}
+
+/* Keyframes para la animación */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateY(-5px); /* Movimiento hacia arriba */
+    }
+}
+
+
+.header {
+    background-color: #f9f1df;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}

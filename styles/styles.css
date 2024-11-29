@@ -1,0 +1,252 @@
+.eslogan{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+.eslogan-secundario{
+    margin: 50px;
+    margin-bottom: 0px;
+    padding: 30px;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    background-color: #FAF2E1;
+    border-radius: 10px; /* Esquinas redondeadas al 30% */
+    box-sizing: content-box; /* Asegura que el padding no exceda el tamaño del contenedor */
+    max-width: 93%; /* Se adapta al tamaño de la página */
+    
+}
+
+/* Estilos para el contenedor principal del carrusel */
+#carrusel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el contenedor de las imágenes */
+.carrusel-container {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estilos para cada imagen */
+.carrusel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.carrusel-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Indicadores de posición (puntos) */
+.carrusel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carrusel-indicators div {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrusel-indicators div.active {
+    background-color: #fff;
+}
+
+.carrusel-indicators div:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de las secciones de productos, reseñas y acerca de */
+.acerca-de {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la calificación (estrellas) */
+.rating {
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.rating i {
+    margin-right: 5px;
+}
+
+.reseña{
+    display: flex;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 20rem;
+    gap: 1rem;
+
+}
+.reseña > div {
+    flex: 5;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+ 
+    transition: all .8s cubic-bezier(.25, .4 .45, 1.4)
+}
+.reseña > div:hover{
+    flex: 5;
+}
+
+.reseña-h2{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Contenedor de desplazamiento horizontal para productos */
+.productos-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho */
+    white-space: nowrap; /* Evita que el contenido se envuelva en múltiples filas */
+}
+
+.producto-item {
+    width: 180px;
+    padding: 10px;
+    background-color: #f9f1df;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: inline-block;
+}
+
+.producto-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #7a3c00;
+}
+
+.producto-item:hover img {
+    transform: scale(1.1);
+}
+
+.producto-item p {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.producto-item:hover p {
+    color: #7a3c00;
+}
+
+/* Estilos adicionales para las reseñas */
+.producto-item, .resena-item {
+    width: 180px;
+    padding: 10px;
+    background-color: #f9f1df;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.producto-item img, .acerca-de-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.resena-item {
+    background-color: #f9f1df;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item-h2{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.acerca-de-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre imagen y texto */
+    background-color: #FAF2E1;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Imagen */
+.acerca-de-content img {
+    flex: 1; /* La imagen ocupa el 50% del ancho del contenedor */
+    max-width: 50%; /* Asegura que no exceda la mitad */
+    aspect-ratio: 1.5 / 1; /* Relación de aspecto: el ancho es el doble de la altura */
+    border-radius: 8px 0 0 8px; /* Esquinas redondeadas solo a la izquierda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    object-fit: cover; /* Ajusta el contenido sin distorsionar */
+}
+
+
+/* Texto */
+.acerca-de-content .texto {
+    flex: 1; /* El texto ocupa el otro 50% */
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+}
+
+.acerca-de-h2{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+

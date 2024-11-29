@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="icon" type="image/x-icon" href="img/LogoECO.png">
+    <link rel="stylesheet" href="styles/stylesLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="principal">
+        <div class="logo">
+            <img src="img/LogoECO.png" alt="LogoECO">
+            <h1>ECOESSENCE</h1>
+        </div>
+        <div class="login">
+            <form id="form-login">
+                <h1>Iniciar Sesión</h1>
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo"> 
+                <label for="contra">Contraseña: </label>
+                <input type="password" id="contra">
+                <div id="responseMessage"></div> 
+                <button type="submit">Iniciar Sesión</button>
+                <a href="crearCuenta.html">Crear Cuenta</a>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/archivosLogica/Login.js"></script>
+</body>
+</html>

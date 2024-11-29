@@ -1,0 +1,106 @@
+/* Estilos generales */
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: auto;
+  }
+  
+  .categoria {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .categoria h2 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 20px;
+    
+  }
+  
+  .carrusel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilos para el item del producto */
+  /* Estilos para el item del producto */
+  .item {
+    min-width: 220px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    position: relative; /* Hacer que el elemento sea posicionado para trabajar con z-index */
+    transition: transform 0.3s, z-index 0s; /* Transición suave */
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    z-index: 10; /* Asegura que el item se muestre por encima cuando el cursor está encima */
+  }
+  
+  /* Estilos de la imagen */
+  .item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+  }
+  
+  /* Estilos para el texto */
+  .item p {
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 5px 0;
+  }
+  
+  .item span {
+    font-size: 1.1em;
+    color: #000000;
+  }
+  
+  
+  
+  .ver-todo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ver-todo:hover {
+    background-color: #0056b3;
+  }

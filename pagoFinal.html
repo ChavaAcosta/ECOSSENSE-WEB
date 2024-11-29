@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="icon" type="image/x-icon" href="img/LogoECO.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/stylesHeader.css">
+    <link rel="stylesheet" href="./styles/stylesFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/stylesPagoFinal.css">
+    <link rel="stylesheet" href="./styles/stylesTransicion.css">
+</head>
+<body>
+    <!-- Animacion de logo -->
+    <div class="transition-overlay">
+        <img src="img/LogoECO.png" alt="Transition Image" class="transition-image">
+    </div>
+    <!-- Menu -->    
+    <header>
+        <div class="logo">
+            <img src="img/LogoECO.png" alt="Logo principal">
+            <h2 class="Nombre de la empresa">
+            ECOSSENCE
+            </h2>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <a href="Index.html" class="nav-link"><i class="fas fa-home"></i></a>
+            <a href="" class="nav-link" id="user-link"><i class="fas fa-user"></i></a>
+            <!--<a href="" class="nav-link"><i class="fas fa-heart"></i></a>-->
+            <a href="catalogo.html" class="nav-link"><i class="fas fa-shopping-bag"></i></a>
+            <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+            
+        </nav>
+    </header>
+
+    <div class="eslogan">
+        <h2>
+            Pago
+        </h2>
+    </div>
+
+    <!--Elementos del carrito-->
+
+    <div class="carrito">
+        <div class="carrito_productos">
+          
+            <div class="checkout-blocks">
+              <div class="checkout-block">
+                <h2>Dirección</h2>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Calle y número">
+                <label for="codigo-postal">Código Postal:</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Código Postal">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+              </div>
+              <div class="checkout-block">
+                <h2>Datos de Pago</h2>
+                <label for="numero-tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX XXXX XXXX XXXX">
+                <label for="titular">Titular:</label>
+                <input type="text" id="titular" name="titular" placeholder="Nombre del titular">
+                <label for="fecha-vencimiento">Fecha de Vencimiento:</label>
+                <input type="text" id="fecha-vencimiento" name="fecha-vencimiento" placeholder="MM/AA">
+                <label for="csv">CSV:</label>
+                <input type="text" id="csv" name="csv" placeholder="XXX">
+              </div>
+            </div>
+        
+        </div>
+
+
+
+        <div class="carrito_pago">
+
+            <h3 class="total_title">Total del carrito</h3>
+            <div class="pago_item">
+                <h3>Subtotal</h3>
+                <p>$kcnksc</p>
+            </div>
+            <div class="pago_item">
+                <h3>Envio</h3>
+                <p>$40</p>
+            </div>
+            <div class="pago_item">
+                <h3>Total</h3>
+                <p>ckmdekmcme</p>
+            </div>
+            <div class="linea_pago"></div>
+            <button class="pay">Pagar</button>
+            
+
+        </div>
+    </div>
+
+
+     <!--Footer-->
+     <footer>
+        <div class="footer-container">
+            <!-- Primera columna: Atención al Cliente -->
+            <div class="footer-column">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><a href="#">Ayuda y contactos</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Límites de importación</a></li>
+                    <li><a href="#">Compromiso de ECOESSENCE con el cliente</a></li>
+                </ul>
+            </div>
+    
+            <!-- Segunda columna: Compras -->
+            <div class="footer-column">
+                <h4>Compras</h4>
+                <ul>
+                    <li><a href="#">Pedidos y envíos</a></li>
+                    <li><a href="#">Pagos y precios</a></li>
+                    <li><a href="#">Pagos con criptomoneda</a></li>
+                    <li><a href="#">Términos y Condiciones de la Promoción</a></li>
+                    <li><a href="#">Devoluciones y reembolsos</a></li>
+                </ul>
+            </div>
+    
+            <!-- Tercera columna: Redes Sociales -->
+            <div class="footer-column social">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <h4>Síguenos</h4>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="social-icons">
+                    <a href="#"><img src="img/IcInsta.webp" alt="Instagram"></a>
+                    <a href="#"><img src="img/IcFacebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/IcPinterest.png" alt="Pinterest"></a>
+                    <a href="#"><img src="img/IcX.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/IcSnap.png" alt="Snapchat"></a>
+                    <a href="#"><img src="img/IcYoutube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/JS.js"></script>
+    <script src="js/JSTransicion.JS"></script>
+    <script type="module" src="js/archivosLogica/PagoFinal.js"></script>
+</body>
+</html>

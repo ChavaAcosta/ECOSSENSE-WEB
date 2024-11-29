@@ -1,0 +1,86 @@
+.producto{
+    display: flex;
+    padding-left: 6rem;
+    margin: 5rem;
+    gap: 5rem;
+
+}
+
+.img_producto{
+    width: 35rem;
+    height: 25rem;
+    margin: 2rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.info_producto{
+    padding-top: 2.5rem;
+    
+}
+
+.compra_producto{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.compra_producto button{
+    width: 14rem;
+    height: 4rem;
+    font-size: larger;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+.btn{
+    margin-left: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.btn span{
+    padding-top: .5rem;
+}
+
+.btn button{
+    width: 2rem;
+    height: 2rem;
+}
+
+.compra_producto button:hover{
+    background: #FAF2E1;
+    color: black;
+    transition: .25s;
+}
+
+.wrap-text {
+    width: 31rem; /* Ajusta el ancho máximo del contenedor */
+    word-wrap: break-word; /* Permite que las palabras se rompan en el siguiente renglón si son muy largas */
+    overflow-wrap: break-word; /* Compatibilidad adicional para navegadores modernos */
+}
+
+.linea{
+    width: 80%; /* O puedes ajustar a un tamaño específico como '200px' */
+    height: 2px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    margin: 10px; /* Espaciado superior e inferior opcional */
+    margin-left: 10rem;
+}
+
+
+/*Descripción e ingredientes*/
+
+.desc_ing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    padding-top: 0;
+    width: 80%;
+    padding-left: 10rem;
+}
+

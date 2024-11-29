@@ -1,0 +1,56 @@
+.items-usuario {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex; /* Disposición en fila */
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 50px; /* Espacio alrededor de los botones */
+  }
+  
+  /* Botones cuadrados */
+  .square-button {
+    width: 400px; /* Ancho fijo */
+    height: 400px; /* Alto fijo para mantener la forma cuadrada */
+    background-color: #ffffff; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto e icono */
+    border: none; /* Sin bordes */
+    border-radius: 30px; /* Bordes redondeados */
+    display: flex; /* Utilizar flexbox para alinear icono y texto */
+    flex-direction: column; /* Alinear icono y texto en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    font-size: 25px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor pointer al pasar sobre el botón */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  }
+  
+  /* Iconos dentro de los botones */
+  .square-button .icon {
+    font-size: 100px; /* Tamaño del icono */
+    margin-bottom: 25px; /* Espacio entre el icono y el texto */
+  }
+  
+  /* Texto dentro de los botones */
+  .square-button .button-text {
+    font-size: 30px; /* Tamaño del texto */
+  }
+  
+  /* Efecto al pasar el mouse */
+  .square-button:hover {
+    color:rgb(76, 57, 31); /* Color del texto e icono */
+    background-color: #f3f3f3; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Ligero aumento de tamaño */
+  }
+  
+  
+  /* Efecto al hacer clic */
+  .square-button:active {
+    transform: scale(0.95); /* Ligero descenso de tamaño */
+  }
+  
